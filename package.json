@@ -1,0 +1,39 @@
+{
+  "name": "mgtr",
+  "version": "0.0.1",
+  "description": "A general-purpose migration manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seich/mgtr.git"
+  },
+  "keywords": [
+    "sql"
+  ],
+  "author": "David Diaz <seich@martianwabbit.com> (http://martianwabbit.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Seich/mgtr/issues"
+  },
+  "homepage": "https://github.com/Seich/mgtr#readme",
+  "dependencies": {
+    "database-js": "^3.0.8",
+    "database-js-postgres": "^1.1.3",
+    "database-js-sqlite": "^1.2.4"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "jest-watch-typeahead": "^0.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "notify": true,
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  }
+}
